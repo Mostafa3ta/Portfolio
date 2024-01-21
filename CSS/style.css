@@ -33,11 +33,11 @@ body.light {
     --page-1: rgb(222, 222, 222);
     --page-2: rgb(200, 200, 200);
     --ico: #b8b8b8;
-    --home-span-1: rgb(245, 110, 255);
-    --home-span-2: linear-gradient(90deg, rgba(245, 110, 255, 1) 0%, rgba(222, 222, 222, 1) 90%);
+    --home-span-1: rgb(155, 118, 195);
+    --home-span-2: linear-gradient(90deg, rgb(155, 118, 195) 0%, rgba(222, 222, 222, 1) 90%);
     background-color: var(--page-1);
-    --second-color: rgb(242, 62, 255);
-    --btn-h: rgb(208, 105, 215);
+    --second-color: rgb(114, 21, 216);
+    --btn-h: rgb(150, 60, 250);
     --p: rgb(46, 46, 46);
     --text: black;
     --title: rgb(211, 211, 211);
@@ -154,13 +154,22 @@ p {
 
 .btn-second {
     background-color: var(--second-color);
+    color: var(--title);
     border: none;
 }
 
 .btn-second:hover {
     background-color: var(--btn-h);
-    color: black;
+    color: var(--title);
 }
+
+/* .btn-second:focus,
+.btn-second:checked,
+.btn-second:active {
+    background-color: var(--btn-h);
+    color: var(--title);
+} */
+
 
 .side-nav {
     position: fixed;
@@ -238,6 +247,7 @@ p {
 
 .home .profile img:hover {
     box-shadow: 0 2px 4px 0 var(--second-color), 0 3px 10px 0 var(--second-color);
+    transform: scale(110%);
 }
 
 .profile-img {
