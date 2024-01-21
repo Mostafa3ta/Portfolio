@@ -2,19 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 
 :root {
-    --page-1: rgb(222, 222, 222);
-    --page-2: rgb(200, 200, 200);
-    --ico: #b8b8b8;
-    --home-span-1: rgb(155, 118, 195);
-    --home-span-2: linear-gradient(90deg, rgb(155, 118, 195) 0%, rgba(222, 222, 222, 1) 90%);
-    background-color: var(--page-1);
-    --second-color: rgb(114, 21, 216);
-    --btn-h: rgb(150, 60, 250);
-    --p: rgb(46, 46, 46);
-    --text: black;
-    --title: rgb(211, 211, 211);
-    --project-h: rgba(142, 142, 142, 0.7);
-    --night: rgba(30, 32, 37, 0.502);
+    --page-1: rgb(30, 32, 38);
+    --page-2: rgb(40, 52, 60);
+    --ico: rgb(19, 23, 28);
+    --home-span-1: rgb(17, 115, 153);
+    --home-span-2: linear-gradient(90deg, rgb(17, 115, 153) 0%, rgba(30, 32, 38, 1) 100%);
+    --second-color: rgb(90, 208, 255);
+    --btn-h: rgb(125, 218, 255);
+    --p: rgb(178, 178, 178);
+    --text: white;
+    --title: rgb(35, 42, 49);
+    --project-h: rgba(40, 51, 62, 0.502);
+    --night: rgba(210, 210, 210, 0.502);
 }
 
 
@@ -30,20 +29,20 @@ body {
 }
 
 body.light {
---page-1: rgb(30, 32, 38);
---page-2: rgb(40, 52, 60);
---ico: rgb(19, 23, 28);
---home-span-1: rgb(17, 115, 153);
---home-span-2: linear-gradient(90deg, rgb(17, 115, 153) 0%, rgba(30, 32, 38, 1) 100%);
---second-color: rgb(90, 208, 255);
---btn-h: rgb(125, 218, 255);
---p: rgb(178, 178, 178);
---text: white;
---title: rgb(35, 42, 49);
---project-h: rgba(40, 51, 62, 0.502);
---night: rgba(210, 210, 210, 0.502);
-transition: all .5s ease;
-
+    --page-1: rgb(222, 222, 222);
+    --page-2: rgb(200, 200, 200);
+    --ico: #b8b8b8;
+    --home-span-1: rgb(155, 118, 195);
+    --home-span-2: linear-gradient(90deg, rgb(155, 118, 195) 0%, rgba(222, 222, 222, 1) 90%);
+    background-color: var(--page-1);
+    --second-color: rgb(114, 21, 216);
+    --btn-h: rgb(150, 60, 250);
+    --p: rgb(46, 46, 46);
+    --text: black;
+    --title: rgb(211, 211, 211);
+    --project-h: rgba(142, 142, 142, 0.7);
+    --night: rgba(30, 32, 37, 0.502);
+    transition: all .5s ease;
 }
 
 
