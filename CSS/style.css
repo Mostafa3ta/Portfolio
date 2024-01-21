@@ -2,34 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
 
 :root {
-    --page-1: rgb(222, 222, 222);
-    --page-2: rgb(200, 200, 200);
-    --ico: #b8b8b8;
-    --home-span-1: rgb(245, 110, 255);
-    --home-span-2: linear-gradient(90deg, rgba(245, 110, 255, 1) 0%, rgba(222, 222, 222, 1) 90%);
-    background-color: var(--page-1);
-    --second-color: rgb(242, 62, 255);
-    --btn-h: rgb(208, 105, 215);
-    --p: rgb(46, 46, 46);
-    --text: black;
-    --title: rgb(211, 211, 211);
-    --project-h: rgba(142, 142, 142, 0.7);
-    --night: rgba(30, 32, 37, 0.502);
-}
-
-
-
-body {
-    margin: 0;
-    background-color: var(--page-1);
-    box-sizing: border-box;
-    margin: auto;
-    color: var(--text);
-    transition: all .5s ease;
-    font-family: 'Philosopher', sans-serif;
-}
-
-body.light {
     --page-1: rgb(30, 32, 38);
     --page-2: rgb(40, 52, 60);
     --ico: rgb(19, 23, 28);
@@ -46,10 +18,39 @@ body.light {
 }
 
 
+
+body {
+    margin: 0;
+    background-color: var(--page-1);
+    box-sizing: border-box;
+    margin: auto;
+    color: var(--text);
+    transition: all .5s ease;
+    font-family: 'Philosopher', sans-serif;
+}
+
+body.light {
+    --page-1: rgb(222, 222, 222);
+    --page-2: rgb(200, 200, 200);
+    --ico: #b8b8b8;
+    --home-span-1: rgb(245, 110, 255);
+    --home-span-2: linear-gradient(90deg, rgba(245, 110, 255, 1) 0%, rgba(222, 222, 222, 1) 90%);
+    background-color: var(--page-1);
+    --second-color: rgb(242, 62, 255);
+    --btn-h: rgb(208, 105, 215);
+    --p: rgb(46, 46, 46);
+    --text: black;
+    --title: rgb(211, 211, 211);
+    --project-h: rgba(142, 142, 142, 0.7);
+    --night: rgba(30, 32, 37, 0.502);
+}
+
+
 .navbar-brand {
     color: var(--text);
     font-family: 'Dancing Script', cursive;
 }
+
 
 
 @media screen and (min-width: 900px) {
@@ -126,7 +127,7 @@ nav .navbar-brand:hover {
 a,
 a:hover {
     text-decoration: none;
-    color: white;
+    color: var(--text);
 }
 
 .container {
@@ -158,6 +159,7 @@ p {
 
 .btn-second:hover {
     background-color: var(--btn-h);
+    color: black;
 }
 
 .side-nav {

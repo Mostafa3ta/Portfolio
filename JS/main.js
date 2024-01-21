@@ -33,14 +33,21 @@ window.addEventListener('scroll', () => {
 //     })
 // })
 
-
+const image = document.querySelector(".profile-project");
 
 
 Theme.addEventListener('click', function (e) {
     body.classList.toggle('light')
     Theme.firstElementChild.classList.toggle('visually-hidden')
     Theme.lastElementChild.classList.toggle('visually-hidden')
+    
+    if (body.classList.contains('light')) {
+        image.src = "images/profile.png"
+    } else {
+        image.src = "images/profile-light.png"
+    }
 })
+    
 
 navList.forEach((el) => {
     el.firstElementChild.addEventListener("click", (e) => {
