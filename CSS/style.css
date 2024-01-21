@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher&display=swap');
+
+:root {
+    --page-1: rgb(30, 32, 38);
+    --page-2: rgb(40, 52, 60);
+    --ico: rgb(19, 23, 28);
+    --home-span-1: rgb(17, 115, 153);
+    --home-span-2: linear-gradient(90deg, rgb(17, 115, 153) 0%, rgba(30, 32, 38, 1) 100%);
+    --second-color: rgb(90, 208, 255);
+    --btn-h: rgb(125, 218, 255);
+    --p: rgb(178, 178, 178);
+    --text: white;
+    --title: rgb(35, 42, 49);
+    --project-h: rgba(40, 51, 62, 0.502);
+    --night: rgba(210, 210, 210, 0.502);
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--page-1);
+    box-sizing: border-box;
+    margin: auto;
+    color: var(--text);
+    transition: all .5s ease;
+    font-family: 'Philosopher', sans-serif;
+}
+
+body.light {
+    --page-1: rgb(222, 222, 222);
+    --page-2: rgb(200, 200, 200);
+    --ico: #b8b8b8;
+    --home-span-1: rgb(245, 110, 255);
+    --home-span-2: linear-gradient(90deg, rgba(245, 110, 255, 1) 0%, rgba(222, 222, 222, 1) 90%);
+    background-color: var(--page-1);
+    --second-color: rgb(216, 14, 231);
+    --btn-h: rgb(208, 105, 215);
+    --p: rgb(46, 46, 46);
+    --text: black;
+    --title: rgb(211, 211, 211);
+    --project-h: rgba(142, 142, 142, 0.7);
+    --night: rgba(30, 32, 37, 0.502);
+    transition: all .5s ease;
+}
+
+
+.navbar-brand {
+    color: var(--text);
+    font-family: 'Dancing Script', cursive;
+}
+
+
+@media screen and (min-width: 900px) {
+
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 2px grey;
+        border-radius: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #3b4e61;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #303f4e;
+    }
+}
+
+.sections {
+    scroll-behavior: smooth;
+}
+
+.page-1 {
+    background-color: var(--page-1);
+}
+
+
+.page-2 {
+    background-color: var(--page-2);
+}
+
+.navbar {
+    background-color: var(--page-1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    transition: transform .5s ease !important;
+    z-index: 9999;
+}
+
+.hide-nav {
+    transform: translateY(-100%);
+}
+
+nav .theme {
+    background-color: var(--page-1);
+    cursor: pointer;
+    transition: all .5s ease;
+    z-index: 999;
+}
+
+nav .theme:hover {
+    transform: scale(105%);
+    color: var(--second-color);
+    box-shadow: 0 2px 3px 0 var(--night), 0 1px 1px 0 var(--night);
+}
+
+nav .navbar-brand {
+    transition: transform .3s ease;
+    transition: color .3s ease;
+}
+
+nav .navbar-brand:hover {
+    transform: scale(105%);
+    color: var(--second-color);
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+p {
+    color: var(--p);
+}
+
+.secondery-text {
+    color: var(--second-color);
+}
+
+.secondery-ico {
+    color: var(--second-color);
+}
+
+.secondery-ico:hover {
+    color: var(--btn-h);
+    cursor: pointer;
+}
+
+.btn-second {
+    background-color: var(--second-color);
+    border: none;
+}
+
+.btn-second:hover {
+    background-color: var(--btn-h);
+}
+
+.side-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+
+@media screen and (max-width: 768px) {
+    .side-nav {
+        position: fixed;
+        top: 0;
+        left: auto;
+        right: 0 !important;
+        bottom: 0;
+        z-index: 99;
+    }
+
+}
+
+.menu {
+    background-color: rgba(0, 0, 0, .2);
+    width: 50px;
+    overflow: hidden;
+    transition: all .5s ease;
+}
+
+.menu:hover {
+    width: 150px;
+    transition: all .5s ease;
+}
+
+.side-item {
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+    transition: all .5s ease;
+}
+
+.side-nav .menu ul li a:hover,
+.side-nav .menu ul li a.active {
+    color: var(--second-color);
+    transition: all .4s ease;
+
+}
+
+.title h2 {
+    color: var(--title);
+    font-size: 6rem;
+    font-weight: 900;
+}
+
+.title .home-span {
+    background: var(--home-span-1);
+    background: var(--home-span-2)
+}
+
+@media screen and (max-width:748px) {
+    .title h2 {
+        font-size: 4.8rem;
+        font-weight: 900;
+    }
+}
+
+.home {
+    padding-top: 20px;
+    margin-top: 0px;
+}
+
+.home .profile img {
+    transition: all 1s ease;
+}
+
+.home .profile img:hover {
+    box-shadow: 0 2px 4px 0 var(--second-color), 0 3px 10px 0 var(--second-color);
+}
+
+.profile-img {
+    width: 75%;
+    overflow: hidden;
+    position: relative;
+}
+
+.border-pic {
+    border: 4px solid var(--second-color);
+}
+
+.profile-img {
+    width: 100%;
+    bottom: 22px;
+    left: 22px;
+    overflow: hidden;
+    position: relative;
+    transition: all .8s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .profile-img {
+        width: 100%;
+        bottom: 18px;
+        left: 18px;
+        overflow: hidden;
+        position: relative;
+        transition: all .8s ease;
+    }
+
+}
+
+
+.services {
+    overflow: hidden;
+    gap: 15px;
+}
+
+.all-services {
+    gap: 20px;
+}
+
+.service-contain {
+    transition: all .5s ease;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, .2);
+
+}
+
+.service-contain:hover {
+    transform: scale(105%);
+    box-shadow: 0 1px 3px 0 var(--second-color), 0 2px 8px 0 var(--second-color);
+}
+
+.skill-item {
+    cursor: pointer;
+}
+
+.skill-list .skill-item {
+    transition: all .2s ease;
+}
+
+.skill-list .skill-item:hover {
+    color: var(--second-color);
+}
+
+.project-contain {
+    overflow: hidden;
+    position: relative;
+}
+
+.project-contain .content a {
+    cursor: pointer;
+}
+
+.project-contain .content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: all 1s ease;
+    color: white !important;
+}
+
+.project-contain .content .btn {
+    color: white !important;
+    transition: all .3s ease;
+}
+
+.project-contain .content .btn:hover {
+    transform: scale(110%);
+}
+
+.project-contain .content-contain {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--project-h);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.project-contain img {
+    transition: all 1s ease;
+}
+
+.project-contain:hover .content-contain {
+    opacity: 1;
+}
+
+.project-contain:hover .content {
+    transform: translateY(0%);
+}
+
+.project-contain:hover img {
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.mail input,
+.mail textarea {
+    background-color: var(--page-2) !important;
+    border: none;
+    outline: none;
+    color: white;
+}
+
+.mail input:focus,
+.mail textarea:focus {
+    box-shadow: 0 0 0 0.1rem var(--second-color);
+    background-color: var(--page-2);
+    color: white;
+
+}
+
+.contact-ico {
+    background-color: var(--page-2);
+}
+
+.email-col {
+    color: var(--p);
+}
+
+.email-col:hover {
+    color: var(--text);
+    cursor: pointer;
+}
