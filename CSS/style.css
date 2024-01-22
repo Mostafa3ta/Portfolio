@@ -35,7 +35,7 @@ body.light {
     --home-span-1: rgb(155, 118, 195);
     --home-span-2: linear-gradient(90deg, rgb(155, 118, 195) 0%, rgba(222, 222, 222, 1) 90%);
     background-color: var(--page-1);
-    --second-color: rgb(114, 21, 216);
+    --second-color: #7215d8;
     --btn-h: rgb(150, 60, 250);
     --p: rgb(46, 46, 46);
     --text: black;
