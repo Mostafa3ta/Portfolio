@@ -6,6 +6,9 @@ const navList = document.querySelectorAll(".side-nav .menu ul li");
 const Theme = document.querySelector('.theme')
 const nav = document.querySelector('.navbar')
 
+$(document).ready(function () {
+    $('#loading').fadeOut(1000);
+});
 
 let lastScrollY = window.scrollY;
 window.addEventListener('scroll', () => {
