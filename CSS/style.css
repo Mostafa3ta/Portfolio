@@ -250,7 +250,7 @@ p {
 }
 
 .border-pic {
-    border: 4px solid var(--second-color);
+    border: 2px solid var(--second-color);
 }
 
 .profile-img {
