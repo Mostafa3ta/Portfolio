@@ -164,11 +164,11 @@ p {
 }
 
 
-.side-nav {
+/* .side-nav {
     position: fixed;
     top: 0;
     left: 0;
-    bottom: 0;
+    bottom: 150px;
     z-index: 9999;
     transition: all .5s ease;
 }
@@ -179,7 +179,7 @@ p {
         top: 0;
         left: auto;
         right: 0 !important;
-        bottom: 0;
+        bottom: 200px;
         z-index: 99;
     }
 
@@ -209,6 +209,23 @@ p {
     color: var(--second-color);
     transition: all .4s ease;
 
+} */
+
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a.active {
+    color: var(--second-color);
+    transition: all .4s ease;
+
+}
+
+.navbar-toggler,
+.navbar-toggler-icon{
+    color: var(--p) !important;
+
+}
+
+.navbar .navbar-nav li a{
+    color: var(--p);
 }
 
 .title h2 {
@@ -373,6 +390,12 @@ p {
     -webkit-filter: blur(8px);
 }
 
+/* .project-types .btn-light:active, 
+.project-types .btn-light:focus {
+    background-color: var(--second-color);
+    color: var(--title);
+} */
+
 .mail input,
 .mail textarea {
     background-color: var(--page-2) !important;
@@ -401,9 +424,6 @@ p {
     color: var(--text);
     cursor: pointer;
 }
-
-
-
 
 #loading {
     position: fixed;
