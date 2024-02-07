@@ -42,7 +42,7 @@ Theme.addEventListener('click', function (e) {
     }
 })
 
-toggleBtn.addEventListener('click', function (e) {
+toggle.addEventListener('click', function (e) {
     if (toggle.classList.contains('collapsed')) {
         toggleBtn.firstElementChild.classList.remove('visually-hidden')
         toggleBtn.lastElementChild.classList.add('visually-hidden')
