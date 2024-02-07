@@ -1,7 +1,7 @@
 const profileImg = document.querySelector('.profile')
 const profileText = document.querySelector('.title')
 const body = document.querySelector('body')
-const Sections = document.querySelectorAll(".sections .section");
+const section = document.querySelectorAll(".section");
 const navList = document.querySelectorAll(".navbar .navbar-nav li");
 const toggleBtn = document.querySelector(".toggle-btn");
 const toggle = document.querySelector(".navbar-toggler");
@@ -29,9 +29,6 @@ window.addEventListener('scroll', () => {
     }
     lastScrollY = window.scrollY;
 });
-
-
-
 
 Theme.addEventListener('click', function (e) {
     body.classList.toggle('light')
@@ -64,6 +61,7 @@ navList.forEach((el) => {
         el.firstElementChild.classList.add("active");
     });
 });
+
 
 let typesBtn = document.querySelectorAll(".project-types button"),
     portfolioItems = document.querySelectorAll(".projects > div");

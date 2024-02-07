@@ -51,8 +51,6 @@ body.light {
     font-family: 'Dancing Script', cursive;
 }
 
-
-
 @media screen and (min-width: 900px) {
 
     ::-webkit-scrollbar {
@@ -109,7 +107,6 @@ nav .theme {
 }
 
 nav .theme:hover {
-    transform: scale(105%);
     color: var(--second-color);
     box-shadow: 0 2px 3px 0 var(--night), 0 1px 1px 0 var(--night);
 }
@@ -163,54 +160,6 @@ p {
     color: var(--title);
 }
 
-
-/* .side-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 150px;
-    z-index: 9999;
-    transition: all .5s ease;
-}
-
-@media screen and (max-width: 768px) {
-    .side-nav {
-        position: fixed;
-        top: 0;
-        left: auto;
-        right: 0 !important;
-        bottom: 200px;
-        z-index: 99;
-    }
-
-}
-
-.menu {
-    background-color: rgba(0, 0, 0, .2);
-    width: 50px;
-    overflow: hidden;
-    transition: all .5s ease;
-}
-
-.menu:hover {
-    width: 150px;
-    transition: all .5s ease;
-}
-
-.side-item {
-    display: flex;
-    padding: 15px;
-    gap: 20px;
-    transition: all .5s ease;
-}
-
-.side-nav .menu ul li a:hover,
-.side-nav .menu ul li a.active {
-    color: var(--second-color);
-    transition: all .4s ease;
-
-} */
-
 .navbar .navbar-nav li a:hover,
 .navbar .navbar-nav li a.active {
     color: var(--second-color);
@@ -219,12 +168,12 @@ p {
 }
 
 .navbar-toggler,
-.navbar-toggler-icon{
+.navbar-toggler-icon {
     color: var(--p) !important;
 
 }
 
-.navbar .navbar-nav li a{
+.navbar .navbar-nav li a {
     color: var(--p);
 }
 
