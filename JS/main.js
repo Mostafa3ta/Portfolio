@@ -91,3 +91,4 @@ typesBtn.forEach((el) => {
     });
 });
 
+
