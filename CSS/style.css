@@ -262,10 +262,6 @@ p {
     box-shadow: 0 1px 3px 0 var(--second-color), 0 2px 8px 0 var(--second-color);
 }
 
-.skill-item {
-    cursor: pointer;
-}
-
 .skill-list .skill-item {
     transition: all .2s ease;
 }
