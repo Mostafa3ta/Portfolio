@@ -58,9 +58,6 @@
                             <li class="nav-item">
                                 <a class="nav-link fs-5" href="#projects">Projects</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-5" href="#contact">Contact</a>
-                            </li>
                         </ul>
                         <ul class="navbar-nav ms-md-auto mt-2 mt-lg-0">
                             <li class="theme px-3 fs-5 ms-auto py-2 rounded-5">
@@ -89,12 +86,10 @@
                                 and its technologies, to deliver best projects and high-quality results.
                             </p>
                             <a href="Mostafa_Mahmoud.pdf" target="_blank" rel='noopener noreferrer' download>
-                                <button type="button" class="btn  btn-second btn-light my-3 mx-2">Resume
-                                    <i class="fa-solid ms-2 fa-up-right-from-square"></i>
+                                <button type="button" class="btn btn-second my-3 mx-2">View Full Résumé
+                                    <i class="fa-solid ms-2 fa-sm fa-arrow-up fa-rotate-by"
+                                        style="--fa-rotate-angle: 45deg;"></i>
                                 </button>
-                            </a>
-                            <a href="#contact">
-                                <button type="button" class="btn btn-second btn-light my-3 mx-2">Contact</button>
                             </a>
                         </div>
                     </div>
@@ -107,6 +102,10 @@
                 </div>
                 <div class="social text-center mt-0 gy-0">
                     <div class="px-3 my-2">
+                        <a href="mailto:m2ostafa2000@gmail.com" class="email-col" target="_blank"
+                            rel='noopener noreferrer'><i
+                                class="fa-solid secondery-text secondery-ico contact-ico p-2 fs-2 mx-1 rounded-5 fa-envelope"></i>
+                        </a>
                         <a href="https://github.com/Mostafa3ta" class="email-col" target="_blank"
                             rel='noopener noreferrer'><i
                                 class="fa-brands secondery-text secondery-ico contact-ico p-2 fs-2 mx-1 rounded-5 fa-github"></i>
@@ -225,226 +224,163 @@
                 </div>
             </div>
         </div>
+    </div>
 
-        <div class="page-2" id="projects">
-            <div class="container ">
-                <div class="title position-relative  d-flex justify-content-center align-items-center mb-5">
-                    <h2>Projects</h2>
-                    <h3 class=" position-absolute mt-3 fs-1"><span class="secondery-text"> My </span> Projects</h3>
+    <div class="page-2" id="projects">
+        <div class="container ">
+            <div class="title position-relative  d-flex justify-content-center align-items-center mb-5">
+                <h2>Projects</h2>
+                <h3 class=" position-absolute mt-3 fs-1"><span class="secondery-text"> My </span> Projects</h3>
+            </div>
+            <div class="project-types text-center mb-4">
+                <button type="button" class="btn btn-dark  active">All</button>
+                <button type="button" class="btn btn-dark ">React.js</button>
+                <button type="button" class="btn btn-dark ">Next.js</button>
+                <button type="button" class="btn btn-dark ">Vanilla JS</button>
+            </div>
+            <div class="projects row col-11 d-flex align-items-center justify-content-center m-auto ">
+                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
+                    data-text="React.js">
+                    <img src="images/e-commerce-4.png" class="rounded-3 w-100 project-img" alt="">
+                    <div class="content-contain rounded-3"></div>
+                    <div class="content w-100  text-center">
+                        <div class="d-flex">
+                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">React.js</h7>
+                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">Redux</h7>
+                        </div>
+                        <h4 class="my-2">E-commerce</h4>
+                        <a href="https://e-commerce-react-js-gamma.vercel.app/" target="_blank"
+                            rel='noopener noreferrer'>
+                            <button class="btn border-0">Show Demo
+                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="project-types text-center mb-4">
-                    <button type="button" class="btn btn-dark  active">All</button>
-                    <button type="button" class="btn btn-dark ">React.js</button>
-                    <button type="button" class="btn btn-dark ">Next.js</button>
-                    <button type="button" class="btn btn-dark ">Vanilla JS</button>
+                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project " data-text="Next.js">
+                    <img src="images/movies.png" class="rounded-3 w-100 project-img" alt="">
+                    <div class="content-contain"></div>
+                    <div class="content w-100  text-center">
+                        <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Next.js</h7>
+                        <h4 class="my-2">Movies</h4>
+                        <a href="https://movies-next-js-one.vercel.app/" target="_blank">
+                            <button class="btn  border-0">Show Demo
+                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
+                            </button>
+                        </a>
+                    </div>
                 </div>
-                <div class="projects row col-11 d-flex align-items-center justify-content-center m-auto ">
-                    <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                        data-text="React.js">
-                        <img src="images/e-commerce-4.png" class="rounded-3 w-100 project-img" alt="">
-                        <div class="content-contain rounded-3"></div>
-                        <div class="content w-100  text-center">
-                            <div class="d-flex">
-                                <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">React.js</h7>
-                                <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">Redux</h7>
-                            </div>
-                            <h4 class="my-2">E-commerce</h4>
-                            <a href="https://e-commerce-react-js-gamma.vercel.app/" target="_blank"
-                                rel='noopener noreferrer'>
-                                <button class="btn border-0">Show Demo
-                                    <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                                </button>
-                            </a>
-                        </div>
+                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
+                    data-text="Vanilla JS">
+                    <img class="rounded-3 profile-project w-100 project-img" src="images/profile-light.png" alt="">
+                    <div class="content-contain"></div>
+                    <div class="content w-100  text-center">
+                        <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Vanilla JS</h7>
+                        <h4 class="my-2">Portfolio</h4>
+                        <a href="#home">
+                            <button class="btn  border-0">Show Demo
+                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
+                            </button>
+                        </a>
                     </div>
-                    <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                        data-text="Next.js">
-                        <img src="images/movies.png" class="rounded-3 w-100 project-img" alt="">
-                        <div class="content-contain"></div>
-                        <div class="content w-100  text-center">
-                            <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Next.js</h7>
-                            <h4 class="my-2">Movies</h4>
-                            <a href="https://movies-next-js-one.vercel.app/" target="_blank">
-                                <button class="btn  border-0">Show Demo
-                                    <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                                </button>
-                            </a>
-                        </div>
+                </div>
+                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
+                    data-text="React.js">
+                    <img src="images/ToDo-List.png" class="rounded-3 w-100 project-img" alt="">
+                    <div class="content-contain rounded-3"></div>
+                    <div class="content w-100  text-center">
+                        <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">React.js</h7>
+                        <h4 class="my-2">ToDo List</h4>
+                        <a href="https://todo-list-app-eight-omega.vercel.app/" target="_blank">
+                            <button class="btn border-0">Show Demo
+                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
+                            </button>
+                        </a>
                     </div>
-                    <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                        data-text="Vanilla JS">
-                        <img class="rounded-3 profile-project w-100 project-img" src="images/profile-light.png" alt="">
-                        <div class="content-contain"></div>
-                        <div class="content w-100  text-center">
-                            <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Vanilla JS</h7>
-                            <h4 class="my-2">Portfolio</h4>
-                            <a href="#home">
-                                <button class="btn  border-0">Show Demo
-                                    <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                                </button>
-                            </a>
+                </div>
+                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
+                    data-text="React.js">
+                    <img src="images/Quiz.png" class="rounded-3 w-100 project-img" alt="">
+                    <div class="content-contain rounded-3"></div>
+                    <div class="content w-100  text-center">
+                        <div class="d-flex">
+                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">React.js</h7>
+                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">Redux</h7>
                         </div>
+                        <h4 class="my-2">Quiz App</h4>
+                        <a href="https://quiz-app-blue-nine.vercel.app/" target="_blank" rel='noopener noreferrer'>
+                            <button class="btn border-0">Show Demo
+                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
+                            </button>
+                        </a>
                     </div>
-                    <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                        data-text="React.js">
-                        <img src="images/ToDo-List.png" class="rounded-3 w-100 project-img" alt="">
-                        <div class="content-contain rounded-3"></div>
-                        <div class="content w-100  text-center">
-                            <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">React.js</h7>
-                            <h4 class="my-2">ToDo List</h4>
-                            <a href="https://todo-list-app-eight-omega.vercel.app/" target="_blank">
-                                <button class="btn border-0">Show Demo
-                                    <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                                </button>
-                            </a>
+                </div>
+                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project " data-text="Next.js">
+                    <img src="images/cars.png" class="rounded-3 w-100 project-img" alt="">
+                    <div class="content-contain"></div>
+                    <div class="content w-100  text-center">
+                        <div class="d-flex">
+                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 mx-1 m-auto">Next.js</h7>
+                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 mx-1 m-auto">TypeScript</h7>
                         </div>
+                        <h4 class="my-2">Cars Rental</h4>
+                        <a href="https://cars-rental-kappa.vercel.app/" target="_blank">
+                            <button class="btn  border-0">Show Demo
+                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
+                            </button>
+                        </a>
                     </div>
-                    <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                        data-text="React.js">
-                        <img src="images/Quiz.png" class="rounded-3 w-100 project-img" alt="">
-                        <div class="content-contain rounded-3"></div>
-                        <div class="content w-100  text-center">
-                            <div class="d-flex">
-                                <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">React.js</h7>
-                                <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">Redux</h7>
-                            </div>
-                            <h4 class="my-2">Quiz App</h4>
-                            <a href="https://quiz-app-blue-nine.vercel.app/" target="_blank" rel='noopener noreferrer'>
-                                <button class="btn border-0">Show Demo
-                                    <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                        data-text="Next.js">
-                        <img src="images/cars.png" class="rounded-3 w-100 project-img" alt="">
-                        <div class="content-contain"></div>
-                        <div class="content w-100  text-center">
-                            <div class="d-flex">
-                                <h7 class="bg-dark rounded-3 px-2 py-1 my-2 mx-1 m-auto">Next.js</h7>
-                                <h7 class="bg-dark rounded-3 px-2 py-1 my-2 mx-1 m-auto">TypeScript</h7>
-                            </div>
-                            <h4 class="my-2">Cars Rental</h4>
-                            <a href="https://cars-rental-kappa.vercel.app/" target="_blank">
-                                <button class="btn  border-0">Show Demo
-                                    <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                        data-text="Vanilla JS">
-                        <img src="images/Bookmarker2.png" class="rounded-3 w-100 project-img" alt="">
-                        <div class="content-contain"></div>
-                        <div class="content w-100  text-center">
-                            <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Vanilla JS</h7>
+                </div>
+                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
+                    data-text="Vanilla JS">
+                    <img src="images/Bookmarker2.png" class="rounded-3 w-100 project-img" alt="">
+                    <div class="content-contain"></div>
+                    <div class="content w-100  text-center">
+                        <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Vanilla JS</h7>
 
-                            <h4 class="my-2">BookMarker</h4>
-                            <a href="https://bookmarker-green.vercel.app/" target="_blank">
-                                <button class="btn  border-0">Show Demo
-                                    <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                                </button>
-                            </a>
-                        </div>
+                        <h4 class="my-2">BookMarker</h4>
+                        <a href="https://bookmarker-green.vercel.app/" target="_blank">
+                            <button class="btn  border-0">Show Demo
+                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
+                            </button>
+                        </a>
                     </div>
-                    <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                        data-text="Vanilla JS">
-                        <img src="images/weather.png" class="rounded-3 w-100 project-img" alt="">
-                        <div class="content-contain"></div>
-                        <div class="content w-100  text-center">
-                            <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Vanilla JS</h7>
+                </div>
+                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
+                    data-text="Vanilla JS">
+                    <img src="images/weather.png" class="rounded-3 w-100 project-img" alt="">
+                    <div class="content-contain"></div>
+                    <div class="content w-100  text-center">
+                        <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Vanilla JS</h7>
 
-                            <h4 class="my-2">Weather DB</h4>
-                            <a href="https://weather-six-blush.vercel.app/" target="_blank">
-                                <button class="btn  border-0">Show Demo
-                                    <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                                </button>
-                            </a>
-                        </div>
+                        <h4 class="my-2">Weather DB</h4>
+                        <a href="https://weather-six-blush.vercel.app/" target="_blank">
+                            <button class="btn  border-0">Show Demo
+                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
+                            </button>
+                        </a>
                     </div>
-                    <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                        data-text="Vanilla JS">
-                        <img src="images/bakery.png" class="rounded-3 w-100 project-img" alt="">
-                        <div class="content-contain"></div>
-                        <div class="content w-100  text-center">
-                            <div class="d-flex">
-                                <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">HTML</h7>
-                                <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">CSS</h7>
-                            </div>
-                            <h4 class="my-2">Bakery</h4>
-                            <a href="https://bakery-seven-delta.vercel.app/" target="_blank">
-                                <button class="btn  border-0">Show Demo
-                                    <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                                </button>
-                            </a>
+                </div>
+                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
+                    data-text="Vanilla JS">
+                    <img src="images/bakery.png" class="rounded-3 w-100 project-img" alt="">
+                    <div class="content-contain"></div>
+                    <div class="content w-100  text-center">
+                        <div class="d-flex">
+                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">HTML</h7>
+                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">CSS</h7>
                         </div>
+                        <h4 class="my-2">Bakery</h4>
+                        <a href="https://bakery-seven-delta.vercel.app/" target="_blank">
+                            <button class="btn  border-0">Show Demo
+                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="page-1" id="contact">
-            <div class="mail  page-1">
-                <div class="contact-me padding-section" id="contact">
-                    <div class="container">
-                        <div class="title position-relative d-flex justify-content-center align-items-center mb-5">
-                            <h2>Contact</h2>
-                            <h3 class="position-absolute mt-3 fs-1">Contact <span class="secondery-text"> Me </span>
-                            </h3>
-                        </div>
-                        <div class="row justify-content-evenly align-items-center ms-md-5 mt-5">
-                            <div class="col-md-5 col-lg-5 col-10 contact-cols offset-1">
-                                <div class="E-mail d-flex my-4 align-items-start ">
-                                    <i
-                                        class="fa-solid contact-ico p-3 mt-1 secondery-ico rounded-5 fs-2 fa-envelope"></i>
-                                    <div class="px-3 py-0">
-                                        <h3>E-mail</h3>
-                                        <a href="mailto:m2ostafa2000@gmail.com" class="email-col">
-                                            m2ostafa2000@gmail.com </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-5 col-lg-5 col-10 contact-cols offset-1 offset-md-0">
-                                <div class="phone d-flex my-4 align-items-start ">
-                                    <i class="fa-solid contact-ico p-3 mt-1 secondery-ico rounded-5 fs-2 fa-phone"></i>
-                                    <div class="px-3 py-0">
-                                        <h3>Phone</h3>
-                                        <p class="email-col"> +201206856251 <span class="px-1">&</span> +201554155074
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="media d-flex my-5 flex-column align-items-center justify-content-center ">
-                            <h2>Socials</h2>
-                            <div class="px-4 my-2">
-                                <a href="https://www.facebook.com/profile.php?id=100007766405910&ref=xav_ig_profile_web"
-                                    class="email-col" target="_blank" rel='noopener noreferrer'><i
-                                        class="fa-brands  secondery-ico contact-ico p-2 fs-2 mx-1 rounded-5 fa-facebook"></i>
-                                </a>
-                                <a href="https://www.instagram.com/mostafa3ta_106?igsh=bXVoMm9yazcwdmlo"
-                                    class="email-col" target="_blank" rel='noopener noreferrer'><i
-                                        class="fa-brands  secondery-ico contact-ico p-2 fs-2 mx-1 rounded-5 fa-instagram"></i>
-                                </a>
-                                <a href="https://wa.me/+201206856251" class="email-col" target="_blank"
-                                    rel='noopener noreferrer'><i
-                                        class="fa-brands  secondery-ico contact-ico p-2 fs-2 mx-1 rounded-5 fa-whatsapp"></i>
-                                </a>
-                                <a href="https://github.com/Mostafa3ta" class="email-col" target="_blank"
-                                    rel='noopener noreferrer'><i
-                                        class="fa-brands  secondery-ico contact-ico p-2 fs-2 mx-1 rounded-5 fa-github"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/mostafa-mahmoud-33a1542b0" class="email-col"
-                                    target="_blank" rel='noopener noreferrer'><i
-                                        class="fa-brands  secondery-ico contact-ico p-2 fs-2 mx-1 rounded-5 fa-linkedin-in"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
 
     </div>
 
