@@ -1,15 +1,14 @@
+const body = document.querySelector('body')
+const nav = document.querySelector('.navbar')
+const navList = document.querySelectorAll(".navbar .navbar-nav li");
+const Theme = document.querySelector('.theme')
+const toggleItems = document.querySelector(".navbar .container-fluid #collapsibleNavId");
+const toggle = document.querySelector(".navbar-toggler");
+const toggleBtn = document.querySelector(".toggle-btn");
 const profileImg = document.querySelector('.profile')
 const profileText = document.querySelector('.title')
-const body = document.querySelector('body')
 const section = document.querySelectorAll(".section");
-const navList = document.querySelectorAll(".navbar .navbar-nav li");
-const toggleBtn = document.querySelector(".toggle-btn");
-const toggle = document.querySelector(".navbar-toggler");
-const toggleItems = document.querySelector(".navbar .container-fluid #collapsibleNavId");
-const Theme = document.querySelector('.theme')
-const nav = document.querySelector('.navbar')
 const image = document.querySelector(".profile-project");
-
 
 $(document).ready(function () {
     $('#loading').fadeOut(1000);
@@ -35,11 +34,11 @@ Theme.addEventListener('click', function (e) {
     Theme.firstElementChild.classList.toggle('visually-hidden')
     Theme.lastElementChild.classList.toggle('visually-hidden')
 
-    if (body.classList.contains('light')) {
-        image.src = "images/profile.png"
-    } else {
-        image.src = "images/profile-light.png"
-    }
+    // if (body.classList.contains('light')) {
+    //     image.src = "images/profile.png"
+    // } else {
+    //     image.src = "images/profile-light.png"
+    // }
 })
 
 toggle.addEventListener('click', function (e) {

@@ -16,7 +16,9 @@
     --night: rgba(210, 210, 210, 0.502);
 }
 
-
+.tech-bg {
+    background-color: var(--home-span-1);
+}
 
 body {
     margin: 0;
@@ -136,15 +138,18 @@ p {
     color: var(--p);
 }
 
+
 .secondery-text {
     color: var(--second-color);
 }
 
 .secondery-ico {
     color: var(--second-color);
+    transition: all .4s ease;
 }
 
 .secondery-ico:hover {
+    transform: scale(1.2);
     color: var(--btn-h);
     cursor: pointer;
 }
@@ -160,6 +165,7 @@ p {
     color: var(--title);
 }
 
+.comp-link,
 .navbar .navbar-nav li a:hover,
 .navbar .navbar-nav li a.active {
     color: var(--second-color);
@@ -213,6 +219,15 @@ p {
     width: 75%;
     overflow: hidden;
     position: relative;
+}
+
+.resume-link a{
+    font-size: 1.15rem;
+    transition: all .4s ease;
+}
+
+.resume-link:hover a {
+    color: var(--second-color);
 }
 
 .border-pic {

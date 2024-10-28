@@ -2,8 +2,9 @@
 
 <head>
     <title>Mostafa Mahmoud</title>
-    <meta name="author" content="Mostafa" />
-    <meta name="description" content="Profile" />
+    <meta name="author" content="Mostafa Mahmoud" />
+    <meta name="description"
+        content="Skilled Front-End Developer with a passion for creating stunning and user-friendly web applications. I am proficient in HTML, CSS, and JavaScript, and have experience with popular frameworks like React and Next.js. I am always eager to learn new technologies and improve my skills." />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/link.svg" />
@@ -45,26 +46,15 @@
                         </span>
                     </button>
                     <div class="collapse navbar-collapse" id="collapsibleNavId">
-                        <ul class="navbar-nav me-auto px-md-2 px-4 mt-2 mt-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link fs-5 active" href="#home" aria-current="page">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-5" href="#about">About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-5" href="#services">Services</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link fs-5" href="#projects">Projects</a>
-                            </li>
+                        <ul id="navContainer" class="navbar-nav me-auto px-md-2 px-4 mt-2 mt-lg-0">
+                            <!-- wrapped in JS file -->
                         </ul>
                         <ul class="navbar-nav ms-md-auto mt-2 mt-lg-0">
                             <li class="theme px-3 fs-5 ms-auto py-2 rounded-5">
-                                <span>Dark
+                                <span>
                                     <i class="fa-solid px-2 fs-4 fa-moon"></i>
                                 </span>
-                                <span class="visually-hidden">Day
+                                <span class="visually-hidden">
                                     <i class="fa-solid px-2 fs-4 fa-sun"></i>
                                 </span>
                             </li>
@@ -82,42 +72,30 @@
                             <span class="fs-2">Hi, <span class="secondery-text ">I'm</span></span>
                             <h1 class="gx-0 ">MOSTAFA MAHMOUD</h1>
                             <p class="my-3 col-md-8 m-auto"><span class="fs-5 px-1 fw-bold home-span">Front-end
-                                    Developer,</span> with a solid foundation in Web Development
-                                and its technologies, to deliver best projects and high-quality results.
+                                    Engineer.</span> Dedicated developer delivering exceptional projects and innovative
+                                solutions. Strong foundation in frontend technologies.
                             </p>
-                            <a href="Mostafa_Mahmoud.pdf" target="_blank" rel='noopener noreferrer' download>
-                                <button type="button" class="btn btn-second my-3 mx-2">View Full Résumé
-                                    <i class="fa-solid ms-2 fa-sm fa-arrow-up fa-rotate-by"
-                                        style="--fa-rotate-angle: 45deg;"></i>
-                                </button>
-                            </a>
+                            <div class="mt-4">
+                                <a href="/Mostafa_Mahmoud.pdf" target="_blank" rel='noopener noreferrer'>
+                                    <button type="button" class="btn btn-second my-3 mx-2">
+                                        Download Résumé
+                                        <i class="fa-solid fa-sm fa-arrow-up fa-rotate-by"
+                                            style="--fa-rotate-angle: 45deg;"></i>
+                                    </button>
+                                </a>
+                            </div>
                         </div>
                     </div>
                     <div
-                        class="col-lg-4 col-md-6 col-sm-6 col-11 d-flex justify-content-md-start justify-content-center  mt-4 home-img">
+                        class="col-lg-4 col-md-6 col-sm-6 col-11 d-flex justify-content-md-start justify-content-center mt-4 home-img">
                         <div class="profile">
                             <img src="images/Mo.JPG" class="w-100 rounded-5 rounded-circle" alt="">
                         </div>
                     </div>
                 </div>
                 <div class="social text-center mt-0 gy-0">
-                    <div class="px-3 my-2">
-                        <a href="mailto:m2ostafa2000@gmail.com" class="email-col" target="_blank"
-                            rel='noopener noreferrer'><i
-                                class="fa-solid secondery-text secondery-ico contact-ico p-2 fs-2 mx-1 rounded-5 fa-envelope"></i>
-                        </a>
-                        <a href="https://github.com/Mostafa3ta" class="email-col" target="_blank"
-                            rel='noopener noreferrer'><i
-                                class="fa-brands secondery-text secondery-ico contact-ico p-2 fs-2 mx-1 rounded-5 fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/mostafa-mahmoud-33a1542b0" class="email-col"
-                            target="_blank" rel='noopener noreferrer'><i
-                                class="fa-brands secondery-text secondery-ico contact-ico p-2 fs-2 mx-1 rounded-5 fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://wa.me/+201206856251" class="email-col" target="_blank"
-                            rel='noopener noreferrer'><i
-                                class="fa-brands secondery-text secondery-ico contact-ico p-2 fs-2 mx-1 rounded-5 fa-whatsapp"></i>
-                        </a>
+                    <div id="socialContainer" class="px-3 my-2">
+                        <!-- wrapped in JS file -->
                     </div>
                 </div>
             </div>
@@ -142,30 +120,15 @@
                         <div class="title my-1 col-lg-8 col-md-10 col-12 text-center m-auto">
                             <div class="mb-5">
                                 <span class="fs-3">Education</span>
-                                <p class="fs-5 text-white"> Bachelor's Degree in Computer Science, <span
-                                        class="fs-5">Helwan University</span></p>
+                                <div class="fs-5"> Bachelor's Degree in Computer Science, <span class="fs-5">Helwan
+                                        University</span>
+                                </div>
                             </div>
                             <div>
                                 <span class="fs-3">Experience</span>
                             </div>
-                            <div class="d-flex mt-2 flex-wrap justify-content-center">
-                                <span class="fs-5 px-2 fw-bold">Frontend Developer</span>
-                                <span class="fs-5">|</span>
-                                <span class="fs-5 px-2"> Camp Coding </span>
-                            </div>
-                            <p class="fs-5 px-2"> (March 2024 - April 2024) </p>
-                            <div>
-                                <ul class="list text-start">
-                                    <li class="skill-item py-1 ps-0"> Created multiple responsive web applications for
-                                        mobiles and desktops using
-                                        React.js and Next.js as well as using HTML, CSS and JavaScript.
-                                    </li>
-                                    <li class="skill-item py-1 ps-0">
-                                        Collaborate with a team of designers and backend
-                                        developers to achieve the goals
-                                        and requirements of each project.
-                                    </li>
-                                </ul>
+                            <div id="expContainer">
+                                <!-- wrapped in JS file -->
                             </div>
                         </div>
                     </div>
@@ -180,213 +143,42 @@
                         <h2>Services</h2>
                         <h3 class=" position-absolute fs-1 mt-3">Services</h3>
                     </div>
-                    <div class="services col-md-7 col-sm-6 mt-5 col-12 text-center d-flex flex-wrap mt-0">
-                        <div class="service-contain h-100 p-3 my-3 m-auto rounded-3 col-lg-5 col-md-10 col-12 ">
-                            <i class="fa secondery-text mb-2 fa-code fs-3"></i>
-                            <h4 class="mb-4">Web Development</h4>
-                            <p class="mb-0">
-                                Optimize components for maximum performance across a vast array of web-capable browsers
-                            </p>
-                        </div>
-                        <div class="service-contain h-100 p-3 my-3 m-auto rounded-3 col-lg-5 col-md-10 col-12">
-                            <i class="fa-solid secondery-text mb-1 fa-mobile-screen-button fs-3"></i>
-                            <i class="fa-solid secondery-text mb-1 fa-display fs-3"></i>
-                            <h4 class="mb-4">Responsive Design</h4>
-                            <p class="mb-0">
-                                Implementing fully responsive web applications that works highly efficient
-                                on every device
-                            </p>
-                        </div>
+                    <div id="serviceContainer"
+                        class="services col-md-7 col-sm-6 mt-5 col-12 text-center d-flex flex-wrap mt-0">
+                        <!-- wrapped in JS file -->
                     </div>
                     <div class="col-md-4 col-sm-6 col-12  mt-5">
                         <h3 class="title text-center ">Technical <span class="secondery-text"> Skills </span></h3>
-                        <div class="skill-list d-flex justify-content-center p-3">
-                            <ul class="list">
-                                <li class="skill-item p-1">HTML & CSS</li>
-                                <li class="skill-item p-1">Tailwind CSS</li>
-                                <li class="skill-item p-1">Bootstrap</li>
-                                <li class="skill-item p-1">JavaScript</li>
-                                <li class="skill-item p-1">jQuery</li>
-                                <li class="skill-item p-1">Context</li>
-                                <li class="skill-item p-1">Redux</li>
-                            </ul>
-                            <ul class="list ">
-                                <li class="skill-item p-1">React.js</li>
-                                <li class="skill-item p-1">Next.js</li>
-                                <li class="skill-item p-1">REST API</li>
-                                <li class="skill-item p-1">TypeScript</li>
-                                <li class="skill-item p-1">Git</li>
-                                <li class="skill-item p-1">GitHub</li>
-                                <li class="skill-item p-1">Microsoft Office</li>
-                            </ul>
+                        <div id="skillContainer" class="skill-list d-flex justify-content-center p-3">
+                            <!-- wrapped in JS file -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="page-2" id="projects">
-        <div class="container ">
-            <div class="title position-relative  d-flex justify-content-center align-items-center mb-5">
-                <h2>Projects</h2>
-                <h3 class=" position-absolute mt-3 fs-1"><span class="secondery-text"> My </span> Projects</h3>
-            </div>
-            <div class="project-types text-center mb-4">
-                <button type="button" class="btn btn-dark  active">All</button>
-                <button type="button" class="btn btn-dark ">React.js</button>
-                <button type="button" class="btn btn-dark ">Next.js</button>
-                <button type="button" class="btn btn-dark ">Vanilla JS</button>
-            </div>
-            <div class="projects row col-11 d-flex align-items-center justify-content-center m-auto ">
-                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                    data-text="React.js">
-                    <img src="images/e-commerce-4.png" class="rounded-3 w-100 project-img" alt="">
-                    <div class="content-contain rounded-3"></div>
-                    <div class="content w-100  text-center">
-                        <div class="d-flex">
-                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">React.js</h7>
-                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">Redux</h7>
-                        </div>
-                        <h4 class="my-2">E-commerce</h4>
-                        <a href="https://e-commerce-react-js-gamma.vercel.app/" target="_blank"
-                            rel='noopener noreferrer'>
-                            <button class="btn border-0">Show Demo
-                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                            </button>
-                        </a>
-                    </div>
+        <div class="page-2" id="projects">
+            <div class="container ">
+                <div class="title position-relative  d-flex justify-content-center align-items-center mb-5">
+                    <h2>Projects</h2>
+                    <h3 class=" position-absolute mt-3 fs-1"><span class="secondery-text"> My </span> Projects</h3>
                 </div>
-                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project " data-text="Next.js">
-                    <img src="images/movies.png" class="rounded-3 w-100 project-img" alt="">
-                    <div class="content-contain"></div>
-                    <div class="content w-100  text-center">
-                        <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Next.js</h7>
-                        <h4 class="my-2">Movies</h4>
-                        <a href="https://movies-next-js-one.vercel.app/" target="_blank">
-                            <button class="btn  border-0">Show Demo
-                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                            </button>
-                        </a>
-                    </div>
+                <div id="projectsTechs" class="project-types text-center mb-4">
+                    <!-- wrapped in JS file -->
                 </div>
-                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                    data-text="Vanilla JS">
-                    <img class="rounded-3 profile-project w-100 project-img" src="images/profile-light.png" alt="">
-                    <div class="content-contain"></div>
-                    <div class="content w-100  text-center">
-                        <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Vanilla JS</h7>
-                        <h4 class="my-2">Portfolio</h4>
-                        <a href="#home">
-                            <button class="btn  border-0">Show Demo
-                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                    data-text="React.js">
-                    <img src="images/ToDo-List.png" class="rounded-3 w-100 project-img" alt="">
-                    <div class="content-contain rounded-3"></div>
-                    <div class="content w-100  text-center">
-                        <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">React.js</h7>
-                        <h4 class="my-2">ToDo List</h4>
-                        <a href="https://todo-list-app-eight-omega.vercel.app/" target="_blank">
-                            <button class="btn border-0">Show Demo
-                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                    data-text="React.js">
-                    <img src="images/Quiz.png" class="rounded-3 w-100 project-img" alt="">
-                    <div class="content-contain rounded-3"></div>
-                    <div class="content w-100  text-center">
-                        <div class="d-flex">
-                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">React.js</h7>
-                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">Redux</h7>
-                        </div>
-                        <h4 class="my-2">Quiz App</h4>
-                        <a href="https://quiz-app-blue-nine.vercel.app/" target="_blank" rel='noopener noreferrer'>
-                            <button class="btn border-0">Show Demo
-                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project " data-text="Next.js">
-                    <img src="images/cars.png" class="rounded-3 w-100 project-img" alt="">
-                    <div class="content-contain"></div>
-                    <div class="content w-100  text-center">
-                        <div class="d-flex">
-                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 mx-1 m-auto">Next.js</h7>
-                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 mx-1 m-auto">TypeScript</h7>
-                        </div>
-                        <h4 class="my-2">Cars Rental</h4>
-                        <a href="https://cars-rental-kappa.vercel.app/" target="_blank">
-                            <button class="btn  border-0">Show Demo
-                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                    data-text="Vanilla JS">
-                    <img src="images/Bookmarker2.png" class="rounded-3 w-100 project-img" alt="">
-                    <div class="content-contain"></div>
-                    <div class="content w-100  text-center">
-                        <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Vanilla JS</h7>
-
-                        <h4 class="my-2">BookMarker</h4>
-                        <a href="https://bookmarker-green.vercel.app/" target="_blank">
-                            <button class="btn  border-0">Show Demo
-                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                    data-text="Vanilla JS">
-                    <img src="images/weather.png" class="rounded-3 w-100 project-img" alt="">
-                    <div class="content-contain"></div>
-                    <div class="content w-100  text-center">
-                        <h7 class="bg-dark rounded-3  py-1 my-2 w-25 m-auto">Vanilla JS</h7>
-
-                        <h4 class="my-2">Weather DB</h4>
-                        <a href="https://weather-six-blush.vercel.app/" target="_blank">
-                            <button class="btn  border-0">Show Demo
-                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                            </button>
-                        </a>
-                    </div>
-                </div>
-                <div class="project-contain  my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
-                    data-text="Vanilla JS">
-                    <img src="images/bakery.png" class="rounded-3 w-100 project-img" alt="">
-                    <div class="content-contain"></div>
-                    <div class="content w-100  text-center">
-                        <div class="d-flex">
-                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">HTML</h7>
-                            <h7 class="bg-dark rounded-3 px-2 py-1 my-2 w-50 mx-1 m-auto">CSS</h7>
-                        </div>
-                        <h4 class="my-2">Bakery</h4>
-                        <a href="https://bakery-seven-delta.vercel.app/" target="_blank">
-                            <button class="btn  border-0">Show Demo
-                                <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
-                            </button>
-                        </a>
-                    </div>
+                <div id="projectContainer"
+                    class="projects row col-11 d-flex align-items-center justify-content-center m-auto ">
+                    <!-- wrapped in JS file -->
                 </div>
             </div>
         </div>
-    </div>
 
     </div>
 
     <script src="JS/bootstrap.bundle.min.js"></script>
-    <script src="JS/all.js"></script>
     <script src="JS/jquery-3.7.1.min.js"></script>
+    <script src="JS/all.js"></script>
+    <script src="JS/content.js"></script>
     <script src="JS/main.js"></script>
 </body>
 
