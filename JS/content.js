@@ -37,8 +37,8 @@ const Experiences = [
     {
         company: 'Camp Coding',
         title: 'Front-End Engineer',
-        from: 'March 2024', to: 'April 2024',
-        description: 'Effectively collaborated with designers and backend developers to ensure seamless integration and project delivery. Built multiple responsive web applications using React.js, Next.js, HTML, CSS, and JavaScript. Maintained and updated existing web applications',
+        from: 'March 2024', to: 'Present',
+        description: 'Collaborate with designers and backend developers to ensure seamless integration and project delivery. Building multiple responsive web applications using React.js, Next.js, HTML, CSS, and JavaScript. Maintain and update existing web applications',
         city: 'Tanta, Egypt',
         link: 'https://www.linkedin.com/company/campcoding/',
         techs: ['HTML & CSS', 'Bootstrap', 'JavaScript', 'React', 'Next.js', 'Typescript', 'Redux', 'RESTful APIs']
@@ -70,7 +70,7 @@ navWrapper.innerHTML = NavList
 
 
 const socialItems = Social.map(item =>
-    `<a href="${item.link}" class="" target="_blank" rel='noopener noreferrer'>
+    `<a href="${item.link}" target="_blank" rel='noopener noreferrer'>
         <i class="${item.icon} secondery-text secondery-ico mx-2 fs-1 rounded-5"></i>
     </a>`).join(' ')
 socialWrapper.innerHTML = socialItems
