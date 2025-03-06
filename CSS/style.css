@@ -221,7 +221,7 @@ p {
     position: relative;
 }
 
-.resume-link a{
+.resume-link a {
     font-size: 1.15rem;
     transition: all .4s ease;
 }
@@ -306,16 +306,7 @@ p {
     align-items: center;
     transform: translateY(100%);
     transition: all 1s ease;
-    color: white !important;
-}
-
-.project-contain .content .btn {
-    color: white !important;
-    transition: all .3s ease;
-}
-
-.project-contain .content .btn:hover {
-    transform: scale(110%);
+    color: var(--text) !important;
 }
 
 .project-contain .content-contain {
@@ -333,6 +324,17 @@ p {
     transition: all .5s ease;
 }
 
+.project-contain .content .btn {
+    color: var(--home-span-2) !important;
+    transition: all .3s ease;
+    /* background-color: var(--btn-h); */
+}
+
+.project-contain .content .btn:hover {
+    transform: scale(110%);
+}
+
+
 .project-contain img {
     transition: all .5s ease;
 }
@@ -348,6 +350,70 @@ p {
 .project-contain:hover img {
     filter: blur(8px);
     -webkit-filter: blur(8px);
+}
+
+@media screen and (max-width: 768px) {
+    .menu:hover {
+        width: 50px;
+        transition: all .5s ease;
+    }
+
+    .home .row {
+        flex-direction: column-reverse;
+    }
+
+    .home-img {
+        margin-bottom: 50px;
+    }
+
+    .contact-me .contact-cols {
+        margin-top: 30px;
+    }
+
+    .project-contain {
+        overflow: hidden;
+        position: static;
+    }
+
+    .project-contain .content {
+        border-bottom-left-radius: 3rem;
+        border-bottom-right-radius: 3rem;
+        padding: 10px 0;
+        background: rgb(0, 0, 0, .3);
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: none;
+        transition: all 1s ease;
+        color: var(--text) !important;
+    }
+
+    .project-contain .content-contain {
+        display: none;
+    }
+
+    .project-contain img {
+        transition: all .5s ease;
+    }
+
+    .project-contain:hover .content-contain {
+        opacity: 1;
+    }
+
+    .project-contain:hover .content {
+        transform: none;
+    }
+
+    .project-contain:hover img {
+        filter: none;
+        -webkit-filter: none;
+    }
+    .project-contain .content .btn {
+        color: var(--text) !important;
+        transition: all .3s ease;
+    }
 }
 
 /* .project-types .btn-light:active, 

@@ -6,7 +6,7 @@ const NavItems = [
 ]
 
 const MyProjects = [
-    { name: 'Movies & Shows', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://movies-henna-zeta.vercel.app/', git: 'https://github.com/Mostafa3ta/movies', img: 'Images/movies.png', },
+    { name: 'Movies & Shows', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://movies-henna-zeta.vercel.app/', git: 'https://github.com/Mostafa3ta/movies', img: 'images/movies.png', },
     { name: 'New Portfolio', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://portfolio-v2-dusky-five.vercel.app/', git: '', img: 'images/New-Portfolio.png', },
     { name: 'E-commerce', category: 'React.js', techs: ['React.js', 'Redux', 'Bootstrap',], link: 'https://e-commerce-react-js-gamma.vercel.app/', git: 'https://github.com/Mostafa3ta/E-commerce_React.js', img: 'images/e-commerce-4.png', },
     { name: 'Cars Rental', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://cars-rental-kappa.vercel.app/', git: 'https://github.com/Mostafa3ta/Cars-Rental', img: 'images/cars.png', },
