@@ -6,15 +6,15 @@ const NavItems = [
 ]
 
 const MyProjects = [
-    { name: 'Movies & Shows', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://movies-henna-zeta.vercel.app/', git: 'https://github.com/Mostafa3ta/movies', img: 'images/movies.png', },
-    { name: 'New Portfolio', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://portfolio-v2-dusky-five.vercel.app/', git: '', img: 'images/New-Portfolio.png', },
-    { name: 'E-commerce', category: 'React.js', techs: ['React.js', 'Redux', 'Bootstrap',], link: 'https://e-commerce-react-js-gamma.vercel.app/', git: 'https://github.com/Mostafa3ta/E-commerce_React.js', img: 'images/e-commerce-4.png', },
-    { name: 'Cars Rental', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://cars-rental-kappa.vercel.app/', git: 'https://github.com/Mostafa3ta/Cars-Rental', img: 'images/cars.png', },
-    { name: 'Quiz App', category: 'React.js', techs: ['React.js', 'Redux', 'MUI',], link: 'https://quiz-app-blue-nine.vercel.app/', git: 'https://github.com/Mostafa3ta/Quiz-App', img: 'images/Quiz.png', },
-    { name: 'To-Do App', category: 'React.js', techs: ['React.js', 'Bootstrap',], link: 'https://todo-list-app-eight-omega.vercel.app/', git: 'https://github.com/Mostafa3ta/Todo-List-App', img: 'images/ToDo-List.png', },
-    { name: 'Bookmarker', category: 'Vanilla JS', techs: ['HTML', 'CSS', 'JavaScript',], link: 'https://bookmarker-green.vercel.app/', git: 'https://github.com/Mostafa3ta/Bookmarker', img: 'images/Bookmarker2.png', },
-    { name: 'Weather', category: 'Vanilla JS', techs: ['HTML', 'CSS', 'JavaScript',], link: 'https://weather-six-blush.vercel.app/', git: 'https://github.com/Mostafa3ta/Weather', img: 'images/weather.png', },
-    { name: 'Bakery', category: 'Vanilla JS', techs: ['HTML', 'CSS',], link: 'https://bakery-seven-delta.vercel.app/', git: 'https://github.com/Mostafa3ta/Bakery', img: 'images/bakery.png', },
+    { name: 'Movies & Shows', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://movies-henna-zeta.vercel.app/', git: 'https://movies-swart-one.vercel.app/', img: 'images/movies.png', },
+    { name: 'New Portfolio', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://portfolio-v2-dusky-rho.vercel.app/', git: '', img: 'images/New-Portfolio.png', },
+    { name: 'E-commerce', category: 'React.js', techs: ['React.js', 'Redux', 'Bootstrap',], link: 'https://e-commerce-delta-one-33.vercel.app/', git: 'https://github.com/Mostafa3ta/E-commerce_React.js', img: 'images/e-commerce-4.png', },
+    { name: 'Cars Rental', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://cars-five-chi.vercel.app/', git: 'https://github.com/Mostafa3ta/Cars-Rental', img: 'images/cars.png', },
+    { name: 'Quiz App', category: 'React.js', techs: ['React.js', 'Redux', 'MUI',], link: 'https://quiz-blond-gamma-63.vercel.app/', git: 'https://github.com/Mostafa3ta/Quiz-App', img: 'images/Quiz.png', },
+    { name: 'To-Do App', category: 'React.js', techs: ['React.js', 'Bootstrap',], link: 'https://todo-list-eta-cyan-49.vercel.app/', git: 'https://github.com/Mostafa3ta/Todo-List-App', img: 'images/ToDo-List.png', },
+    { name: 'Bookmarker', category: 'Vanilla JS', techs: ['HTML', 'CSS', 'JavaScript',], link: 'https://bookmarker-teal.vercel.app/', git: 'https://github.com/Mostafa3ta/Bookmarker', img: 'images/Bookmarker2.png', },
+    // { name: 'Weather', category: 'Vanilla JS', techs: ['HTML', 'CSS', 'JavaScript',], link: '', git: 'https://github.com/Mostafa3ta/Weather', img: 'images/weather.png', },
+    // { name: 'Bakery', category: 'Vanilla JS', techs: ['HTML', 'CSS',], link: '', git: 'https://github.com/Mostafa3ta/Bakery', img: 'images/bakery.png', },
 ]
 
 const Social = [
@@ -117,18 +117,25 @@ technicalSkills.innerHTML = skillsList
 const projectList = MyProjects.map(item =>
     `<div class="project-contain my-3 rounded-3 col-lg-4 col-md-6 col-10 show-project "
 data-text="${item.category}" >
-    <img src="${item.img}" class="rounded-3 w-100 project-img" alt="${item.name}">
+    <img src="${item.img}" class=" w-100 project-img" alt="${item.name}">
         <div class="content-contain rounded-3"></div>
-        <div class="content w-100 text-center">
+        <div class="content gap-md- gap-2 w-100 text-center">
             <h4 class="my-2">${item.name}</h4>
             <div class="d-flex">
                 ${item.techs.map(tech => `<h7 class="tech-bg rounded-3 px-2 py-1 my-2  mx-1 m-auto">${tech}</h7>`).join(' ')}
             </div>
-            <a href="${item.link}" target="_blank" rel='noopener noreferrer'>
-                <button class="btn border-0">Show Demo
-                    <i class="fa-solid hover-ico ms-2 fa-up-right-from-square"></i>
+            <div class="d-flex justify-content-center gap-3 w-100 align-items-center">
+                <a href="${item.link}" target="_blank" rel='noopener noreferrer'>
+                <button class="btn border-0">
+                <i class="fa-solid h3 hover-ico mx-1 fa-up-right-from-square"></i>
                 </button>
-            </a>
+                </a>
+                <a href="${item.git}" target="_blank" rel='noopener noreferrer'>
+                <button class="btn border-0">
+                <i class="fa-brands fa-github h2 mx-1 hover-ico"></i>
+                </button>
+                </a>
+                </div>
         </div>
     </div>` ).join('')
 projectWrapper.innerHTML = projectList
