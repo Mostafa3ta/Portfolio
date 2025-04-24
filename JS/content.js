@@ -7,7 +7,7 @@ const NavItems = [
 
 const MyProjects = [
     { name: 'Movies & Shows', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://movies-henna-zeta.vercel.app/', git: 'https://movies-swart-one.vercel.app/', img: 'images/movies.png', },
-    { name: 'New Portfolio', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://portfolio-v2-dusky-rho.vercel.app/', git: '', img: 'images/New-Portfolio.png', },
+    { name: 'New Portfolio', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://portfolio2-eosin-six.vercel.app/', git: '', img: 'images/New-Portfolio.png', },
     { name: 'E-commerce', category: 'React.js', techs: ['React.js', 'Redux', 'Bootstrap',], link: 'https://e-commerce-delta-one-33.vercel.app/', git: 'https://github.com/Mostafa3ta/E-commerce_React.js', img: 'images/e-commerce-4.png', },
     { name: 'Cars Rental', category: 'Next.js', techs: ['Next.js', 'Typescript', 'Tailwind',], link: 'https://cars-five-chi.vercel.app/', git: 'https://github.com/Mostafa3ta/Cars-Rental', img: 'images/cars.png', },
     { name: 'Quiz App', category: 'React.js', techs: ['React.js', 'Redux', 'MUI',], link: 'https://quiz-blond-gamma-63.vercel.app/', git: 'https://github.com/Mostafa3ta/Quiz-App', img: 'images/Quiz.png', },
