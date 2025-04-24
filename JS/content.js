@@ -13,7 +13,7 @@ const MyProjects = [
     { name: 'Quiz App', category: 'React.js', techs: ['React.js', 'Redux', 'MUI',], link: 'https://quiz-blond-gamma-63.vercel.app/', git: 'https://github.com/Mostafa3ta/Quiz-App', img: 'images/Quiz.png', },
     { name: 'To-Do App', category: 'React.js', techs: ['React.js', 'Bootstrap',], link: 'https://todo-list-eta-cyan-49.vercel.app/', git: 'https://github.com/Mostafa3ta/Todo-List-App', img: 'images/ToDo-List.png', },
     { name: 'Bookmarker', category: 'Vanilla JS', techs: ['HTML', 'CSS', 'JavaScript',], link: 'https://bookmarker-teal.vercel.app/', git: 'https://github.com/Mostafa3ta/Bookmarker', img: 'images/Bookmarker2.png', },
-    // { name: 'Weather', category: 'Vanilla JS', techs: ['HTML', 'CSS', 'JavaScript',], link: '', git: 'https://github.com/Mostafa3ta/Weather', img: 'images/weather.png', },
+    { name: 'Weather', category: 'Vanilla JS', techs: ['HTML', 'CSS', 'JavaScript',], link: 'https://weather-omega-wine.vercel.app/', git: 'https://github.com/Mostafa3ta/Weather', img: 'images/weather.png', },
     // { name: 'Bakery', category: 'Vanilla JS', techs: ['HTML', 'CSS',], link: '', git: 'https://github.com/Mostafa3ta/Bakery', img: 'images/bakery.png', },
 ]
 
