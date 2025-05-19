@@ -26,13 +26,22 @@ const Social = [
 
 const Experiences = [
     {
+        company: 'MedicaProf',
+        title: 'Mid-Level Front-End Engineer',
+        from: 'April 2025', to: 'Present',
+        description: 'Collaborate with designers and backend developers to ensure seamless integration and efficient project delivery for our platform. Develop and implement responsive user interfaces and advanced features like charts, full functional calendar and more using Next.js, Tailwind CSS, and JavaScript. Maintain, optimize, and update existing applications and platform components.',
+        location: 'Remote',
+        link: 'https://www.linkedin.com/company/medicaprof/',
+        techs: ['Next.js', 'HTML & CSS', 'Tailwind CSS', 'JavaScript', 'Typescript', 'Redux', 'RESTful APIs']
+    },
+    {
         company: 'Camp Coding',
         title: 'Front-End Engineer',
-        from: 'March 2024', to: 'Present',
+        from: 'March 2024', to: 'April 2025',
         description: 'Collaborate with designers and backend developers to ensure seamless integration and project delivery. Building multiple responsive web applications using React.js, Next.js, HTML, CSS, and JavaScript. Maintain and update existing web applications',
         city: 'Tanta, Egypt',
         link: 'https://www.linkedin.com/company/campcoding/',
-        techs: ['HTML & CSS', 'Bootstrap', 'JavaScript', 'React', 'Next.js', 'Typescript', 'Redux', 'RESTful APIs']
+        techs: ['React', 'Next.js', 'HTML & CSS', 'Bootstrap', 'JavaScript', 'Typescript', 'Redux', 'RESTful APIs']
     },
     {
         company: 'Route Academy',
