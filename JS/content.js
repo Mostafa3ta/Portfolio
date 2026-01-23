@@ -21,7 +21,7 @@ const MyProjects = [
     techs: ["Next.js", "TypeScript", "Tailwind CSS"],
     link: "https://portfolio2-eosin-six.vercel.app/",
     git: "https://github.com/Mostafa3ta/Portfolio-v2",
-    img: "images/new-portfolio.png",
+    img: "images/New-Portfolio.png",
   },
   {
     name: "Movies Website",
