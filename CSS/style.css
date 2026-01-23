@@ -18,6 +18,7 @@
 
 .tech-bg {
     background-color: var(--home-span-1);
+    font-size: 12px;
 }
 
 body {
@@ -158,11 +159,32 @@ p {
     background-color: var(--second-color);
     color: var(--title);
     border: none;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
 }
 
 .btn-second:hover {
     background-color: var(--btn-h);
     color: var(--title);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-outline-second {
+    background-color: transparent;
+    color: var(--second-color);
+    border: 2px solid var(--second-color);
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-second:hover {
+    background-color: var(--second-color);
+    color: var(--title);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .comp-link,
@@ -230,64 +252,201 @@ p {
     color: var(--second-color);
 }
 
-.border-pic {
-    border: 2px solid var(--second-color);
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
-.profile-img {
-    width: 100%;
-    bottom: 22px;
-    left: 22px;
-    overflow: hidden;
+.experience-timeline {
     position: relative;
-    transition: all .8s ease;
 }
 
 @media screen and (max-width: 768px) {
-    .profile-img {
-        width: 100%;
-        bottom: 18px;
-        left: 18px;
-        overflow: hidden;
-        position: relative;
-        transition: all .8s ease;
+    .experience-card {
+        margin-bottom: 1rem;
     }
-
+    
+    .skills-grid {
+        gap: 1rem;
+    }
+    
+    .service-card {
+        margin-bottom: 1rem;
+    }
 }
 
 
-.services {
-    overflow: hidden;
-    gap: 15px;
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
 }
 
-.all-services {
-    gap: 20px;
-}
-
-.service-contain {
-    transition: all .5s ease;
+.service-card {
+    transition: all .4s ease;
     cursor: pointer;
     background-color: rgba(0, 0, 0, .2);
-
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.service-contain:hover {
-    transform: scale(105%);
-    box-shadow: 0 1px 3px 0 var(--second-color), 0 2px 8px 0 var(--second-color);
+.service-card:hover {
+    transform: translateY(-8px);
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), 0 0 20px rgba(90, 208, 255, 0.2);
+    border-color: var(--second-color);
 }
 
-.skill-list .skill-item {
-    transition: all .2s ease;
+.experience-card {
+    background-color: rgba(0, 0, 0, .15);
+    transition: all .3s ease;
+    border-left: 3px solid var(--second-color);
 }
 
-.skill-list .skill-item:hover {
-    color: var(--second-color);
+.experience-card:hover {
+    background-color: rgba(0, 0, 0, .25);
+    transform: translateX(5px);
+}
+
+.tech-badge {
+    background-color: var(--home-span-1);
+    color: var(--text);
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.tech-badge:hover {
+    background-color: var(--second-color);
+    transform: scale(1.05);
+}
+
+.skill-badge {
+    background-color: rgba(0, 0, 0, .2);
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    transition: all 0.2s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-badge:hover {
+    background-color: var(--home-span-1);
+    border-color: var(--second-color);
+    transform: translateY(-2px);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background-color: rgba(0, 0, 0, .25);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all .3s ease;
+    cursor: pointer;
+    min-height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card i {
+    color: var(--text);
+    transition: all .3s ease;
+}
+
+.skill-name {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text);
+}
+
+.skill-card:hover {
+    background-color: rgba(0, 0, 0, .35);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-color: var(--second-color);
+}
+
+.skill-card:hover i {
+    transform: scale(1.1);
+    color: var(--btn-h);
+}
+
+/* Ensure inline SVGs match font icon sizing for consistent layout */
+.skill-card svg {
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto 0.5rem;
+}
+
+.skill-card i {
+    font-size: 40px;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card:hover {
+    color: var(--btn-h);
+}
+
+/* Make inline SVG icons follow the element color and respond to theme
+   Use !important to override inline SVG fill/stroke attributes (e.g. fill="#ffffff") */
+.skill-card,
+.skill-card i {
+    color: var(--text);
+}
+
+.skill-card svg,
+.skill-card svg * {
+    fill: currentColor !important;
+    stroke: currentColor !important;
+}
+
+/* In light mode prefer the text color (black) for svg/icons so they are visible */
+body.light .skill-card,
+body.light .skill-card i {
+    color: var(--text);
 }
 
 .project-contain {
     overflow: hidden;
     position: relative;
+}
+
+.production-badge {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background: linear-gradient(135deg, #22c55e, #16a34a);
+    color: white;
+    padding: 0.3rem 0.5rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(34, 197, 94, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    animation: pulse-badge 2s ease-in-out infinite;
+}
+
+@keyframes pulse-badge {
+    0%, 100% {
+        box-shadow: 0 2px 8px rgba(34, 197, 94, 0.4);
+    }
+    50% {
+        box-shadow: 0 2px 12px rgba(34, 197, 94, 0.6);
+    }
 }
 
 .project-contain .content a {
@@ -307,6 +466,13 @@ p {
     transform: translateY(100%);
     transition: all 1s ease;
     color: var(--text) !important;
+    overflow-y: auto;
+}
+
+.project-desc {
+    color: var(--p);
+    line-height: 1.4;
+    max-width: 90%;
 }
 
 .project-contain .content-contain {
@@ -372,12 +538,13 @@ p {
 
     .project-contain {
         overflow: hidden;
-        position: static;
+        /* keep relative so absolutely positioned badges anchor to the project card */
+        position: relative;
     }
 
     .project-contain .content {
-        border-bottom-left-radius: 3rem;
-        border-bottom-right-radius: 3rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
         padding: 10px 0;
         background: rgb(0, 0, 0, .3);
         position: static;
@@ -392,6 +559,9 @@ p {
 
     .project-contain .content-contain {
         display: none;
+    }
+    .content-contain .production-badge {
+        position: static;
     }
 
     .project-contain img {

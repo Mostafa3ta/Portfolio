@@ -5,15 +5,12 @@ const Theme = document.querySelector('.theme')
 const toggleItems = document.querySelector(".navbar .container-fluid #collapsibleNavId");
 const toggle = document.querySelector(".navbar-toggler");
 const toggleBtn = document.querySelector(".toggle-btn");
-const profileImg = document.querySelector('.profile')
-const profileText = document.querySelector('.title')
-const section = document.querySelectorAll(".section");
-const image = document.querySelector(".profile-project");
 
 $(document).ready(function () {
     $('#loading').fadeOut(1000);
 });
 
+// Navbar hide/show on scroll
 let lastScrollY = window.scrollY;
 window.addEventListener('scroll', () => {
     if (lastScrollY < window.scrollY) {
@@ -29,19 +26,15 @@ window.addEventListener('scroll', () => {
     lastScrollY = window.scrollY;
 });
 
-Theme.addEventListener('click', function (e) {
+// Theme toggle
+Theme.addEventListener('click', function () {
     body.classList.toggle('light')
     Theme.firstElementChild.classList.toggle('visually-hidden')
     Theme.lastElementChild.classList.toggle('visually-hidden')
-
-    // if (body.classList.contains('light')) {
-    //     image.src = "images/profile.png"
-    // } else {
-    //     image.src = "images/profile-light.png"
-    // }
 })
 
-toggle.addEventListener('click', function (e) {
+// Mobile menu toggle
+toggle.addEventListener('click', function () {
     if (toggle.classList.contains('collapsed')) {
         toggleBtn.firstElementChild.classList.remove('visually-hidden')
         toggleBtn.lastElementChild.classList.add('visually-hidden')
@@ -51,7 +44,7 @@ toggle.addEventListener('click', function (e) {
     }
 })
 
-
+// Active nav link
 navList.forEach((el) => {
     el.firstElementChild.addEventListener("click", (e) => {
         navList.forEach((els) => {
@@ -61,9 +54,10 @@ navList.forEach((el) => {
     });
 });
 
-
+// Project filter
 let typesBtn = document.querySelectorAll(".project-types button"),
     portfolioItems = document.querySelectorAll(".projects > div");
+    
 typesBtn.forEach((el) => {
     el.addEventListener("click", () => {
         typesBtn.forEach((ele) => {
@@ -75,10 +69,7 @@ typesBtn.forEach((el) => {
         });
         el.classList.add("active");
         portfolioItems.forEach((pi) => {
-            if (
-                el.textContent === pi.dataset.text ||
-                el.textContent === "All"
-            ) {
+            if (el.textContent === pi.dataset.text || el.textContent === "All") {
                 pi.style.display = "block";
                 setTimeout(() => {
                     pi.classList.add("show-project");

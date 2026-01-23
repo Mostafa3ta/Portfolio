@@ -1,12 +1,13 @@
 <html lang="en">
 
 <head>
-    <title>Mostafa Mahmoud</title>
+    <title>Mostafa Mahmoud - Front-End Developer</title>
     <meta name="author" content="Mostafa Mahmoud" />
     <meta name="description"
-        content="Skilled Front-End Developer with a passion for creating stunning and user-friendly web applications. I am proficient in HTML, CSS, and JavaScript, and have experience with popular frameworks like React and Next.js. I am always eager to learn new technologies and improve my skills." />
+        content="Front-End Developer with experience delivering production-grade web applications. Strong in building responsive, performant user interfaces and implementing complex frontend features with clean, maintainable code. Comfortable working in real-world environments and adapting quickly to new systems and requirements." />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Front-End Developer, React, Next.js, TypeScript, JavaScript, Web Developer, Portfolio">
     <link rel="icon" href="images/link.svg">
     <link rel="stylesheet" href="CSS/bootstrap-icons.min.css">
     <link rel="stylesheet" href="CSS/bootstrap.min.css">
@@ -70,26 +71,24 @@
                         <div class="title">
                             <span class="fs-2">Hi, <span class="secondery-text ">I'm</span></span>
                             <h1 class="gx-0 ">MOSTAFA MAHMOUD</h1>
-                            <p class="my-3 col-md-8 m-auto"><span class="fs-5 px-1 fw-bold home-span">Front-end
-                                    Engineer.</span> Dedicated developer delivering exceptional projects and innovative
-                                solutions. Strong foundation in frontend technologies.
+                            <p class="my-3 col-md-9 m-auto"><span class="fs-5 px-1 fw-bold home-span">Front-End Developer</span> with experience delivering production-grade web applications. Strong in building responsive, performant user interfaces and implementing complex frontend features with clean, maintainable code.
                             </p>
-                            <div class="mt-4">
+                            <div class="mt-4 d-flex flex-wrap justify-content-center gap-2">
                                 <a href="https://drive.google.com/file/d/1rDiA_ctujMWmFdFENKmjycLDz3DJRMZz/view?usp=drive_link"
                                     target="_blank" rel='noopener noreferrer'>
-                                    <button type="button" class="btn btn-second my-3 mx-2">
+                                    <button type="button" class="btn btn-second my-2 mx-2">
                                         View Résumé
                                         <i class="fa-solid fa-sm fa-arrow-up fa-rotate-by"
                                             style="--fa-rotate-angle: 45deg;"></i>
                                     </button>
                                 </a>
+                                <a href="#projects">
+                                    <button type="button" class="btn btn-outline-second my-2 mx-2">
+                                        View Projects
+                                        <i class="fa-solid fa-sm fa-arrow-down"></i>
+                                    </button>
+                                </a>
                             </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-lg-4 col-md-6 col-sm-6 col-11 d-flex justify-content-md-start justify-content-center mt-4 home-img">
-                        <div class="profile">
-                            <img src="images/Mo.JPG" class="w-100 rounded-5 rounded-circle" alt="">
                         </div>
                     </div>
                 </div>
@@ -107,27 +106,19 @@
                     <h2>About</h2>
                     <h3 class="position-absolute mt-3 fs-1"> About <span class="secondery-text"> Me </span></h3>
                 </div>
-                <div class="row d-flex flex-md-nowrap align-items-center justify-content-center m-5  ">
-                    <div
-                        class="col-md-4 col-sm-6 col-11 d-flex justify-content-md-start justify-content-center mt-md-1 mt-5">
-                        <div class="border-pic">
-                            <div class="profile-img ">
-                                <img src="images/Gr4.jpg" class="w-100 ">
+                <div class="row d-flex align-items-start justify-content-center mx-lg-5 mx-3 my-5">
+                    <div class="col-lg-10 col-12">
+                        <div class="about-content">
+                            <div class="mb-5 text-center">
+                                <h3 class="mb-3"><i class="fa-solid fa-graduation-cap secondery-text me-2"></i>Education</h3>
+                                <div class="fs-5"><strong>Bachelor of Computer Science</strong></div>
+                                <div class="fs-6 ">Helwan University | Cairo, Egypt</div>
+                                <p class="fs-6 ">October 2019 — June 2023</p>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-8 col-md-8 mt-5 col-12 text-start d-flex justify-content-center">
-                        <div class="title my-1 col-lg-8 col-md-10 col-12 text-center m-auto">
-                            <div class="mb-5">
-                                <span class="fs-3">Education</span>
-                                <div class="fs-5"> Bachelor's Degree in Computer Science, <span class="fs-5">Helwan
-                                        University</span>
-                                </div>
+                            <div class="mb-4 text-center">
+                                <h3 class="mb-4"><i class="fa-solid fa-briefcase secondery-text me-2"></i>Professional Experience</h3>
                             </div>
-                            <div>
-                                <span class="fs-3">Experience</span>
-                            </div>
-                            <div id="expContainer">
+                            <div id="expContainer" class="experience-timeline">
                                 <!-- wrapped in JS file -->
                             </div>
                         </div>
@@ -137,37 +128,41 @@
         </div>
 
         <div class="page-1" id="services">
-            <div class="container ">
-                <div class="row d-flex all-services align-items-center justify-content-center m-5 mt-2  ">
-                    <div class="title position-relative  d-flex justify-content-center align-items-center ">
-                        <h2>Services</h2>
-                        <h3 class=" position-absolute fs-1 mt-3">Services</h3>
-                    </div>
-                    <div id="serviceContainer"
-                        class="services col-md-7 col-sm-6 mt-5 col-12 text-center d-flex flex-wrap mt-0">
-                        <!-- wrapped in JS file -->
-                    </div>
-                    <div class="col-md-4 col-sm-6 col-12  mt-5">
-                        <h3 class="title text-center ">Technical <span class="secondery-text"> Skills </span></h3>
-                        <div id="skillContainer" class="skill-list d-flex justify-content-center p-3">
+            <div class="container">
+                <div class="title position-relative d-flex justify-content-center align-items-center mb-5">
+                    <h2>Skills</h2>
+                    <h3 class="position-absolute fs-1 mt-3">Technical <span class="secondery-text">Skills</span></h3>
+                </div>
+                <div class="row d-flex align-items-start justify-content-center mx-lg-5 mx-3 my-5">
+                    <div class="col-12">
+                        <div id="skillContainer" class="skills-grid">
                             <!-- wrapped in JS file -->
                         </div>
+                    </div>
+                </div>
+                <div class="title position-relative d-flex justify-content-center align-items-center mb-4 mt-5">
+                    <h2>What I Do</h2>
+                    <h3 class="position-absolute fs-1 mt-3"><span class="secondery-text">What</span> I Do</h3>
+                </div>
+                <div class="row d-flex align-items-center justify-content-center mx-lg-5 mx-3 my-5">
+                    <div id="serviceContainer" class="services-grid col-12">
+                        <!-- wrapped in JS file -->
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="page-2" id="projects">
-            <div class="container ">
+            <div class="container">
                 <div class="title position-relative d-flex justify-content-center align-items-center mb-5">
                     <h2>Projects</h2>
-                    <h3 class=" position-absolute mt-3 fs-1"><span class="secondery-text"> My </span> Projects</h3>
+                    <h3 class="position-absolute mt-3 fs-1"><span class="secondery-text">My</span> Projects</h3>
                 </div>
                 <div id="projectsTechs" class="project-types text-center mb-4">
                     <!-- wrapped in JS file -->
                 </div>
                 <div id="projectContainer"
-                    class="projects row col-11 d-flex align-items-center justify-content-md-start justify-content-center m-auto ms-md-auto ">
+                    class="projects row col-11 d-flex align-items-center justify-content-md-start justify-content-center m-auto ms-md-auto">
                     <!-- wrapped in JS file -->
                 </div>
             </div>
