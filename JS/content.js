@@ -13,9 +13,15 @@ const MyProjects = [
     link: "https://medicaprof.com/",
     git: "",
     img: "images/MedicaProf.png",
-    description:
-      "Developed and deployed core features for a live healthcare platform serving thousands of users. Built a fully functional appointment calendar system, interactive analytics dashboard with data visualizations, and reusable component architecture.",
     isProduction: true,
+  },
+  {
+    name: "New Portfolio",
+    category: "Next.js",
+    techs: ["Next.js", "TypeScript", "Tailwind CSS"],
+    link: "https://portfolio2-eosin-six.vercel.app/",
+    git: "https://github.com/Mostafa3ta/Portfolio-v2",
+    img: "images/new-portfolio.png",
   },
   {
     name: "Movies Website",
@@ -24,8 +30,6 @@ const MyProjects = [
     link: "https://movies-swart-one.vercel.app/",
     git: "https://github.com/Mostafa3ta/movies",
     img: "images/movies.png",
-    description:
-      "High-performance movie database with optimized data fetching and advanced search filtering",
   },
   {
     name: "E-commerce ",
@@ -34,19 +38,15 @@ const MyProjects = [
     link: "https://e-commerce-delta-one-33.vercel.app/",
     git: "https://github.com/Mostafa3ta/E-commerce_React.js",
     img: "images/e-commerce-4.png",
-    description:
-      "Full-featured e-commerce site with cart management, product filtering, and checkout flow",
   },
-  {
-    name: "Cars Rental",
-    category: "Next.js",
-    techs: ["Next.js", "TypeScript", "Tailwind CSS"],
-    link: "https://cars-five-chi.vercel.app/",
-    git: "https://github.com/Mostafa3ta/Cars-Rental",
-    img: "images/cars.png",
-    description:
-      "Car rental platform with advanced filtering and responsive design",
-  },
+  // {
+  //   name: "Cars Rental",
+  //   category: "Next.js",
+  //   techs: ["Next.js", "TypeScript", "Tailwind CSS"],
+  //   link: "https://cars-five-chi.vercel.app/",
+  //   git: "https://github.com/Mostafa3ta/Cars-Rental",
+  //   img: "images/cars.png",
+  // },
   {
     name: "Quiz Application",
     category: "React.js",
@@ -54,8 +54,6 @@ const MyProjects = [
     link: "https://quiz-blond-gamma-63.vercel.app/",
     git: "https://github.com/Mostafa3ta/Quiz-App",
     img: "images/Quiz.png",
-    description:
-      "Interactive quiz app with score tracking and timer functionality",
   },
   {
     name: "To-Do App",
@@ -64,7 +62,6 @@ const MyProjects = [
     link: "https://todo-list-eta-cyan-49.vercel.app/",
     git: "https://github.com/Mostafa3ta/Todo-List-App",
     img: "images/ToDo-List.png",
-    description: "Task management app with CRUD operations and local storage",
   },
   {
     name: "Bookmarker",
@@ -73,8 +70,6 @@ const MyProjects = [
     link: "https://bookmarker-teal.vercel.app/",
     git: "https://github.com/Mostafa3ta/Bookmarker",
     img: "images/Bookmarker2.png",
-    description:
-      "Bookmark manager with validation and local storage persistence",
   },
   {
     name: "Weather App",
@@ -83,7 +78,6 @@ const MyProjects = [
     link: "https://weather-omega-wine.vercel.app/",
     git: "https://github.com/Mostafa3ta/Weather",
     img: "images/weather.png",
-    description: "Weather application with API integration and geolocation",
   },
 ];
 
@@ -103,7 +97,6 @@ const Social = [
     link: "mailto:m2ostafa2000@gmail.com",
     icon: "fa-solid fa-square-envelope",
   },
-  // { name: 'WhatsApp', link: 'https://wa.me/+20', icon: 'fa-brands fa-square-whatsapp' },
 ];
 
 const Experiences = [
