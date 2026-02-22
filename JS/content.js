@@ -102,7 +102,7 @@ const Social = [
 const Experiences = [
   {
     company: "MedicaProf",
-    title: "Mid-Level Front-End Developer",
+    title: "Senior Front-End Developer",
     from: "April 2025",
     to: "Present",
     description:
