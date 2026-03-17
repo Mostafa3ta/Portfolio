@@ -422,6 +422,56 @@ body.light .skill-card i {
     position: relative;
 }
 
+.in-progress-badge {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+    color: white;
+    padding: 0.3rem 0.5rem;
+    border-radius: 2rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 10;
+    box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+    animation: pulse-progress 2s ease-in-out infinite;
+}
+
+@keyframes pulse-progress {
+    0%, 100% {
+        box-shadow: 0 2px 8px rgba(245, 158, 11, 0.4);
+    }
+    50% {
+        box-shadow: 0 2px 12px rgba(245, 158, 11, 0.65);
+    }
+}
+
+.logo-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.logo-placeholder .logo-img {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+    filter: brightness(1.1);
+    transition: all .5s ease;
+}
+
+.project-contain:hover .logo-placeholder .logo-img {
+    filter: blur(8px) brightness(0.4);
+    -webkit-filter: blur(8px) brightness(0.4);
+}
+
 .production-badge {
     position: absolute;
     top: 10px;
@@ -561,6 +611,9 @@ body.light .skill-card i {
         display: none;
     }
     .content-contain .production-badge {
+        position: static;
+    }
+    .content-contain .in-progress-badge {
         position: static;
     }
 
